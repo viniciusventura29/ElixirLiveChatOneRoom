@@ -25,7 +25,6 @@ import "phoenix_html"
 import {Socket} from "phoenix"
 import {LiveSocket} from "phoenix_live_view"
 import topbar from "../vendor/topbar"
-import socket from "./user_socket.js"
 
 let csrfToken = document.querySelector("meta[name='csrf-token']").getAttribute("content")
 let liveSocket = new LiveSocket("/live", Socket, {params: {_csrf_token: csrfToken}})
@@ -46,6 +45,8 @@ window.liveSocket = liveSocket
 
 import socket from "./user_socket.js"
 import WaterCooler from "./water_cooler"
+import Chat from './chat'
+Chat.init(socket)
 
 WaterCooler.init(socket)
 

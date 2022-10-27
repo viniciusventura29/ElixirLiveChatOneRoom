@@ -1,7 +1,7 @@
 let WaterCooler = {
     init(socket) {
         let channel = socket.channel('water_cooler:lobby',{})
-        channel.join
+        channel.join()
         this.listenForChats(channel)
     },
     

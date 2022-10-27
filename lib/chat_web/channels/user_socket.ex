@@ -10,7 +10,7 @@ defmodule ChatWeb.UserSocket do
   # Uncomment the following line to define a "room:*" topic
   # pointing to the `ChatWeb.RoomChannel`:
   #
-  # channel "room:*", ChatWeb.RoomChannel
+   channel "chat:*", ChatWeb.ChatChannel
   #
   # To create a channel file, use the mix task:
   #
