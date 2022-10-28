@@ -2,6 +2,9 @@
 
 ### this is a project developed only to learn how to a simple chats with one works, although, I developed another project with mutiple rooms that is more interesting, I recommend you take a look in that another project too. 😉  
 
+
+## Elixir
+
 To start your Phoenix server:
 
   * Install dependencies with `mix deps.get`
